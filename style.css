@@ -1,0 +1,38 @@
+﻿body {
+background: black;
+}
+h1{
+color: white;
+font-size: 28px;
+}
+p{
+color: white;
+font-size: 18px;
+}
+
+@media (min-width: 640px){
+	body {
+		background: white;
+	}
+	h1, p{
+		color: black;
+	}
+}
+
+@media (min-width: 980px){
+	body {
+		background: linear-gradient(0deg, hsl(24, 20%, 87%) 1px, hsl(24, 20%, 95%)) -3px no-repeat;
+	}
+	h1, p{
+		color: #333;
+	}
+}
+
+@media print{
+	body {
+		background: white;
+	}
+	h1, p{
+		color: red;
+	}
+}
